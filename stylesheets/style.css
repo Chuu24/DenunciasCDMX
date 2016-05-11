@@ -1,0 +1,57 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body,html {
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 4em;
+        color: white;
+}
+
+#can {
+    height: 290px;
+    width: 100%;
+}
+
+#cans {
+    height: 100%;
+    width: 100%;
+}
+
+#cani {
+    height: 290px;
+    width: 100%;
+}
+
+#formfalsa{
+    text-align: left;
+}
+
+#denuncia{
+    float: right;
+}
+
+.env-var {
+    color: black;
+	text-align: right;
+	border-right: 1px solid #000;
+	width: 30%;
+}
+
+#answer{
+    text-align: justify;
+    padding: 5px 15px;
+    color: black;
+}
+
+#question{
+    color: black;
+}
+

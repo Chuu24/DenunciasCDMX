@@ -1,0 +1,134 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">  
+
+    <context-param> 
+            <description>
+                    Usuario base de datos
+            </description> 
+            <param-name>
+                    usuario
+            </param-name> 
+            <param-value>
+                    acosodf
+            </param-value> 
+    </context-param>
+
+    <context-param> 
+            <description>
+                    Direccion del servidor
+            </description> 
+            <param-name>
+                    servidor
+            </param-name> 
+            <param-value>
+                    db4free.net
+            </param-value> 
+    </context-param>
+
+    <context-param> 
+            <description>
+                    Password base de datos
+            </description> 
+            <param-name>
+                    pass
+            </param-name> 
+            <param-value>
+                    hadoop123
+            </param-value> 
+    </context-param>
+    
+    <servlet>
+        <servlet-name>
+        	WatsonAnswers
+        </servlet-name>
+        <servlet-class>
+        	WatsonAnswers
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+        	WatsonAnswers
+        </servlet-name>
+        <url-pattern>
+        	/ask
+        </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>
+        	Denunciar
+        </servlet-name>
+        <servlet-class>
+        	AltaDenuncia
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+        	Denunciar
+        </servlet-name>
+        <url-pattern>
+        	/denuncia
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>
+        	grafica
+        </servlet-name>
+        <servlet-class>
+        	grafica
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+        	grafica
+        </servlet-name>
+        <url-pattern>
+        	/grafica
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>
+        	graficas
+        </servlet-name>
+        <servlet-class>
+        	graficas
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+        	graficas
+        </servlet-name>
+        <url-pattern>
+        	/graficas
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>
+        	graficai
+        </servlet-name>
+        <servlet-class>
+        	graficai
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+        	graficai
+        </servlet-name>
+        <url-pattern>
+        	/graficai
+        </url-pattern>
+    </servlet-mapping>
+    
+</web-app>

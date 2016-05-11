@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Denuncias CDMX</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/iconillo.png">
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/asking.js" type="text/javascript"></script>
+    <script src="js/dibujarGrafica.js" type="text/javascript"></script>
+    <script src="js/dibujarGraficas.js" type="text/javascript"></script>
+    <script src="js/dibujarGraficai.js" type="text/javascript"></script>
+  </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-10">
+                    <h1><b>Denuncias CDMX</b></h1>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-10 center-body">
+                    <div class="row">
+                        <div class="col-lg-12" >
+                        	<h3>Número de incidentes por delegacion.</h3>
+                        	<canvas id="cans"></canvas>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6" >
+                        	<h3>Número de denuncias por hora.</h3>
+                        	<canvas id="can"></canvas>
+                        </div>
+                        <div class="col-lg-6" >
+                        	<h3>Número de incidentes por mes.</h3>
+                        	<canvas id="cani"></canvas>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6" >
+                            <h3>Realiza una denuncia.</h3>
+                            De esta manera nos ayudarás a tener estadísticas más reales para presentar ante las autoridades.<br>
+                            <br>
+                            <div id="formfalsa">
+                                Delegación: <select name="delegaciones" id="delegacion">
+                                    <option value="Álvaro Obregón">Álvaro Obregón</option>
+                                    <option value="Azcapotzalco">Azcapotzalco</option>
+                                    <option value="Benito Juárez">Benito Juárez</option>
+                                    <option value="Coyoacán">Coyoacán</option>
+                                    <option value="Cuajimalpa de Morelos">Cuajimalpa de Morelos</option>
+                                    <option value="Cuauhtémoc">Cuauhtémoc</option>
+                                    <option value="Gustavo A. Madero">Gustavo A. Madero</option>
+                                    <option value="Iztacalco">Iztacalco</option>
+                                    <option value="Iztapalapa">Iztapalapa</option>
+                                    <option value="Magdalena Contreras">Magdalena Contreras</option>
+                                    <option value="Miguel Hidalgo">Miguel Hidalgo</option>
+                                    <option value="Milpa Alta">Milpa Alta</option>
+                                    <option value="Tláhuac">Tláhuac</option>
+                                    <option value="Tlalpan">Tlalpan</option>
+                                    <option value="Venustiano Carranza">Venustiano Carranza</option>
+                                    <option value="Xochimilco">Xochimilco</option>
+                                </select><br>
+                                Hora del incidente: <input type="text" class="input-sm" size="20" id="hora" placeholder="hh:mm - formato 24 hrs." /><br>
+                                Fecha del incidente: <input type="text" class="input-sm" size="20" id="fecha" placeholder="yyyy-mm-dd." /><br>
+                                <br>
+                                <input type="submit" value="Reportar" id="denuncia" class="btn-success" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6" >
+                            <h3>Chat de ayuda</h3>
+                            <div id="answer"></div>
+                            <br>
+                            <div class="barra">
+                                <input type="text" class="input-sm" size="50" id="question" />
+                                <input type="submit" value="Preguntar" id="askme" class="btn-success" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
